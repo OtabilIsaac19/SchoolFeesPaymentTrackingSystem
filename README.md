@@ -4,12 +4,7 @@ A desktop GUI application, built with **Java Swing**, that helps a school's
 accounts office register students, record fee payments across multiple
 payment channels, and monitor collections in real time.
 
-Developed as term paper <img width="956" height="504" alt="USER INTERFACE" src="https://github.com/user-attachments/assets/3d5e1bd2-4319-44b5-97b1-fb428cde73db" />
-<img width="959" height="500" alt="STUDENT REPORT" src="https://github.com/user-attachments/assets/5ab5c7ad-76ea-4b52-912e-b66353d71c09" />
-<img width="940" height="495" alt="REGISTERING STUDENT" src="https://github.com/user-attachments/assets/cb259635-3320-4909-b2c2-10122e211a50" />
-<img width="947" height="505" alt="RECORD PAYMENT" src="https://github.com/user-attachments/assets/155e6960-9053-4343-8f07-e243e8d901ff" />
-<img width="953" height="505" alt="PAYMENT HISTORY" src="https://github.com/user-attachments/assets/fb4b7b93-cc9e-4ebe-bda4-6a1eac8e9df2" />
-for **INF811D: Object Oriented Programming**, MSc Information
+Developed for **INF811D: Object Oriented Programming**, MSc Information
 Technology Programme, College of Distance Education (CoDE), University of
 Cape Coast — 2025/2026 Academic Year.
 
@@ -74,7 +69,12 @@ The application opens with three sample students and two sample payments
 already loaded so the dashboard and tables are not empty on first launch.
 
 ## Screenshots
-!
+<img width="956" height="504" alt="USER INTERFACE" src="https://github.com/user-attachments/assets/d8d5a4de-242d-48d3-8498-a432b5a99ce8" />
+<img width="959" height="500" alt="STUDENT REPORT" src="https://github.com/user-attachments/assets/9b95650f-c7e5-4a94-b712-2832be753e54" />
+<img width="940" height="495" alt="REGISTERING STUDENT" src="https://github.com/user-attachments/assets/3b46a694-fe29-464f-9be6-559ef07048ee" />
+<img width="947" height="505" alt="RECORD PAYMENT" src="https://github.com/user-attachments/assets/4f071cba-0ce6-4bac-93db-0bf31611c4e1" />
+<img width="953" height="505" alt="PAYMENT HISTORY" src="https://github.com/user-attachments/assets/44b47081-a6f5-4e90-ab39-d4eaa0ac9760" />
+
 ## Author
 Name: Isaac Otabil
 Index Number: MS/ITE/25/0014 
