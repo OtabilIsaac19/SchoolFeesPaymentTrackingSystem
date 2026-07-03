@@ -98,6 +98,7 @@ SchoolFeesPaymentTrackingSystem/
 
 **Name:** Isaac Otabil  
 **Index Number:** MS/ITE/25/0014
+
 **Programme:** MSc Information Technology  
 **Course:** INF811D - Object Oriented Programming  
 **Institution:** University of Cape Coast  
