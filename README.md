@@ -1,81 +1,116 @@
 # School Fees Payment Tracking System
 
-A desktop GUI application, built with **Java Swing**, that helps a school's
-accounts office register students, record fee payments across multiple
-payment channels, and monitor collections in real time.
+## Project Description
 
-I individually developed this system as a Term paper for **INF811D: Object Oriented Programming**, MSc Information
-Technology Programme, College of Distance Education (CoDE), University of
-Cape Coast — 2025/2026 Academic Year.
+This **School Fees Payment Tracking System** is a GUI-based Java application developed to help schools record, monitor, and manage student school fees payments. The system allows users to add student payment records, calculate outstanding balances, view payment status, and search for student fee information.
+
+This project was individually developed for **INF811D: Object Oriented Programming** as a semester term paper/practical project.
 
 ## Features
 
-- Register students with programme, level and total fees due
-- Record payments via **Cash**, **Mobile Money**, or **Bank Transfer**
-- Automatic receipt number generation and balance calculation
-- Dashboard showing total students, total collected, total outstanding,
-  and number of students still in arrears
-- Full payment history table
-- Search a specific student's fee record or view all students at once
-- Input validation and custom exception handling throughout
-  (invalid amounts, overpayment, duplicate student IDs, unknown student IDs)
+- Add student fee payment records
+- Store student details such as Student ID, name, and programme/class
+- Record total school fees and amount paid
+- Automatically calculate outstanding balance
+- Display payment status as:
+  - Fully Paid
+  - Partially Paid
+  - Not Paid
+- Search student payment records
+- Update payment information
+- Validate user input
+- Display records using a graphical user interface
 
-## Object-Oriented Concepts Demonstrated
+## Technologies Used
 
-| Concept | Where |
-|---|---|
-| Encapsulation | Private fields with getters/setters in `Person`, `FeeInvoice`, `Payment`, etc. |
-| Inheritance | `Student` and `Admin` extend `Person`; `CashPayment`, `MobileMoneyPayment`, `BankTransferPayment` extend `Payment` |
-| Abstraction | `Person` and `Payment` are abstract classes with abstract methods |
-| Polymorphism | `getRoleDescription()` and `getPaymentDetails()` behave differently for each subclass at runtime |
-| Exception Handling | Custom checked exceptions: `InvalidAmountException`, `OverpaymentException`, `DuplicateStudentException`, `StudentNotFoundException` |
-| Collections | `ArrayList` and `LinkedHashMap` in `FeeManager` |
-| Event-driven programming | Swing `ActionListener`s on every button/combo box |
+- Java
+- Java GUI Framework: Java Swing or JavaFX
+- Object-Oriented Programming
+- IntelliJ IDEA / NetBeans / Eclipse / VS Code
 
-## Project Structure
+## Object-Oriented Programming Concepts Applied
 
-```
+### Encapsulation
+
+Class attributes are kept private and accessed through getter and setter methods. This protects student and payment data from direct modification.
+
+### Inheritance
+
+The system can use a parent class such as `Person`, with `Student` inheriting common properties like ID and name.
+
+### Polymorphism
+
+Methods such as `displayDetails()` can be overridden in different classes to show different types of information.
+
+### Abstraction
+
+Abstract classes or interfaces can be used to define important payment operations such as calculating balance and checking payment status.
+
+## Suggested Project Structure
+
+```text
 SchoolFeesPaymentTrackingSystem/
+│
 ├── src/
-│   ├── Person.java                 (abstract)
+│   ├── Main.java
 │   ├── Student.java
-│   ├── Admin.java
-│   ├── FeeInvoice.java
-│   ├── Payment.java                (abstract)
-│   ├── CashPayment.java
-│   ├── MobileMoneyPayment.java
-│   ├── BankTransferPayment.java
-│   ├── InvalidAmountException.java
-│   ├── OverpaymentException.java
-│   ├── DuplicateStudentException.java
-│   ├── StudentNotFoundException.java
-│   ├── FeeManager.java
-│   ├── MainFrame.java              (GUI)
-│   └── SchoolFeesApp.java          (entry point)
-└── README.md
+│   ├── Payment.java
+│   ├── FeeRecord.java
+│   └── FeeManager.java
+│
+├── screenshots/
+│   ├── dashboard.png
+│   ├── add-record.png
+│   └── payment-status.png
+│
+├── README.md
+└── School_Fees_Payment_Tracking_System_Technical_Report.docx
 ```
 
-## How to Run
+## How to Run the Application
 
-Requires JDK 17 or later (no external libraries needed — pure Java Swing).
+1. Download or clone this repository.
+2. Open the project in your preferred Java IDE, such as IntelliJ IDEA, NetBeans, Eclipse, or VS Code.
+3. Make sure Java is installed on your computer.
+4. Open the `src` folder.
+5. Run the `Main.java` file.
+6. Use the graphical interface to manage student fee payment records.
 
-```bash
-cd SchoolFeesPaymentTrackingSystem
-javac -d bin src/*.java
-java -cp bin SchoolFeesApp
-```
+## Sample Use of the System
 
-The application opens with three sample students and two sample payments
-already loaded so the dashboard and tables are not empty on first launch.
+1. Enter the student ID, student name, programme/class, total fees, amount paid, and payment date.
+2. Click the **Add Record** button.
+3. The system calculates the outstanding balance automatically.
+4. The payment status is displayed as Fully Paid, Partially Paid, or Not Paid.
+5. Use the search function to find a student record.
 
 ## Screenshots
-<img width="956" height="504" alt="USER INTERFACE" src="https://github.com/user-attachments/assets/d8d5a4de-242d-48d3-8498-a432b5a99ce8" />
-<img width="959" height="500" alt="STUDENT REPORT" src="https://github.com/user-attachments/assets/9b95650f-c7e5-4a94-b712-2832be753e54" />
-<img width="940" height="495" alt="REGISTERING STUDENT" src="https://github.com/user-attachments/assets/3b46a694-fe29-464f-9be6-559ef07048ee" />
-<img width="947" height="505" alt="RECORD PAYMENT" src="https://github.com/user-attachments/assets/4f071cba-0ce6-4bac-93db-0bf31611c4e1" />
-<img width="953" height="505" alt="PAYMENT HISTORY" src="https://github.com/user-attachments/assets/44b47081-a6f5-4e90-ab39-d4eaa0ac9760" />
+<img width="956" height="504" alt="USER INTERFACE" src="https://github.com/user-attachments/assets/dd391981-58d9-47b0-8233-94bbed7caa49" />
+<img width="959" height="500" alt="STUDENT REPORT" src="https://github.com/user-attachments/assets/178bcc57-8f8b-461e-8e85-072f6b78d924" />
+<img width="940" height="495" alt="REGISTERING STUDENT" src="https://github.com/user-attachments/assets/015a702d-5ccc-474a-8a4b-8cee266f09ab" />
+<img width="947" height="505" alt="RECORD PAYMENT" src="https://github.com/user-attachments/assets/a6adef5e-75c1-4c21-82bd-6d657b610118" />
+<img width="953" height="505" alt="PAYMENT HISTORY" src="https://github.com/user-attachments/assets/44369660-d350-4975-bbaf-dbb4218bb8ae" />
+
+
+
 
 ## Author
-Name: Isaac Otabil
-Index Number: MS/ITE/25/0014 
 
+**Name:** Isaac Otabil  
+**Index Number:** MS/ITE/25/0014
+**Programme:** MSc Information Technology  
+**Course:** INF811D - Object Oriented Programming  
+**Institution:** University of Cape Coast  
+
+## GitHub Repository
+
+GitHub repository link here:https://github.com/Isaac1519/SchoolFeesPaymentTrackingSystem
+
+
+```text
+https://github.com/Isaac1519/SchoolFeesPaymentTrackingSystem
+```
+
+## Conclusion
+
+The School Fees Payment Tracking System provides a simple and organized way to manage student school fees payments. It improves accuracy, reduces manual record-keeping errors, and demonstrates the practical application of Object-Oriented Programming concepts in Java.
