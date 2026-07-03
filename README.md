@@ -4,7 +4,7 @@ A desktop GUI application, built with **Java Swing**, that helps a school's
 accounts office register students, record fee payments across multiple
 payment channels, and monitor collections in real time.
 
-Developed for **INF811D: Object Oriented Programming**, MSc Information
+I individually developed this system as a Term paper for **INF811D: Object Oriented Programming**, MSc Information
 Technology Programme, College of Distance Education (CoDE), University of
 Cape Coast — 2025/2026 Academic Year.
 
