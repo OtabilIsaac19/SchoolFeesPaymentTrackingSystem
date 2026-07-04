@@ -105,11 +105,11 @@ SchoolFeesPaymentTrackingSystem/
 
 ## GitHub Repository
 
-GitHub repository link here:https://github.com/Isaac1519/SchoolFeesPaymentTrackingSystem
+GitHub repository link here:https://github.com/OtabilIsaac19/SchoolFeesPaymentTrackingSystem
 
 
 ```text
-https://github.com/Isaac1519/SchoolFeesPaymentTrackingSystem
+https://github.com/OtabilIsaac19/SchoolFeesPaymentTrackingSystem
 ```
 
 ## Conclusion
