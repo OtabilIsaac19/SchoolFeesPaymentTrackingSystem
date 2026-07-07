@@ -32,21 +32,21 @@ This project was individually developed for **INF811D: Object-Oriented Programmi
 
 ## Object-Oriented Programming Concepts Applied
 
-### Encapsulation
+## Encapsulation
 
-Class attributes are kept private and accessed through getter and setter methods. This helps protect student and payment data from direct modification.
+In the Student, Person, and Payment classes, attributes such as the student ID, name, total fees, and amount paid are declared as private. These fields are accessed and modified only through public getter and setter methods, which protects the student and payment data from direct or invalid modification from outside the class.
 
-### Inheritance
+## Inheritance
 
-The system uses a parent class such as `Person`, with `Student` inheriting common properties such as ID and name.
+The Student class extends the base Person class, inheriting common properties such as ID and name. In the same way, the three payment types — CashPayment, BankTransferPayment, and MobileMoneyPayment — all extend the base Payment class, inheriting its shared attributes and behaviour instead of repeating the same code in each class.
 
-### Polymorphism
+## Polymorphism
 
-Methods such as `displayDetails()` can be overridden in different classes to display different types of information.
+Each payment subclass (CashPayment, BankTransferPayment, and MobileMoneyPayment) overrides the processPayment() method inherited from the Payment class. This means the same processPayment() call behaves differently depending on the payment type selected, allowing the system to handle all payment methods through a single, consistent interface.
 
-### Abstraction
+## Abstraction
 
-Abstract classes or interfaces can be used to define important payment operations, such as calculating balances and checking payment status.
+The Payment class defines the common structure and operations shared by all payment types, such as calculating balances and processing a payment, while each subclass provides its own specific implementation. This hides the internal details of how each payment type works and exposes only the operations the rest of the system needs.
 
 ## Project Structure
 
