@@ -74,7 +74,7 @@ SchoolFeesPaymentTrackingSystem/
 │   ├── OverpaymentException.java       # Thrown when a payment exceeds the balance
 │   └── StudentNotFoundException.java   # Thrown when a searched Student ID is missing
 │
-├── screenshots/                        # Application screenshots used in this README
+├── ScreenShot/                        # Application screenshots used in this README
 ├── README.md                           # Project documentation (this file)
 └── .gitignore
 ```
